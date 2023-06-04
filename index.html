@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <title> Scored Board </title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="teamBoard">
+                <div class="team-div">
+                    <h1> <span class="home-span">H</span>OME </h1>
+                    <p id="home-score" class="scores"> 0 </p>
+                    <button onclick="addOneHome()"> +1 </button>
+                    <button onclick="addTwoHome()"> +2 </button>
+                    <button onclick="addThreeHome()"> +3 </button>
+                </div>
+            
+                <div class="team-div" id="styling-away">
+                    <h1> <span class="away-span">G</span>UEST </h1>
+                    <p id="away-score" class="scores"> 0 </p>
+                    <button onclick="addOneAway()"> +1 </button>
+                    <button onclick="addTwoAway()"> +2 </button>
+                    <button onclick="addThreeAway()"> +3 </button>
+                </div>
+            </div>
+            <br>
+            <button onclick="gameReset()" class="reset-btn"> New Game </button>
+        </div>
+        
+        <script src="index.js"></script>
+    </body>
+</html>
